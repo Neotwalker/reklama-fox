@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#C73509">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#C73509">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#C73509">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="main--page">
+
+		<header class="header">
+			<div class="header--wrapper">
+				<div class="logo"><img src="img/logo.png" alt="#"></div>
+				<ul class="contacts">
+					<li>
+						<a href="tel:+73512479762" target="_blank">
+							<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.3042 0.57309V2.26047C15.9731 2.26047 17.5367 2.68232 18.9948 3.52601C20.3827 4.35212 21.4895 5.45947 22.3152 6.84804C23.1584 8.30692 23.5801 9.87127 23.5801 11.5411H25.2666C25.2666 9.55488 24.7659 7.70931 23.7645 6.00435C22.7983 4.35212 21.4895 3.04264 19.8381 2.07591C18.134 1.07403 16.2894 0.57309 14.3042 0.57309ZM5.58169 3.10416C5.10735 3.10416 4.69451 3.25357 4.34315 3.55237L1.6289 6.32074L1.70795 6.268C1.26875 6.63712 0.978881 7.09412 0.838337 7.639C0.715362 8.18389 0.750498 8.71119 0.943745 9.22092C1.43565 10.5919 2.09445 11.9981 2.92014 13.4394C4.07963 15.4256 5.45871 17.2096 7.0574 18.7915C9.62232 21.3753 12.8109 23.4143 16.6232 24.9083H16.6495C17.159 25.0841 17.6685 25.1192 18.1779 25.0138C18.705 24.9083 19.1705 24.6798 19.5746 24.3283L22.2361 21.6654C22.5875 21.3138 22.7632 20.8832 22.7632 20.3735C22.7632 19.8462 22.5875 19.4067 22.2361 19.0552L18.784 15.575C18.4327 15.2234 17.9935 15.0477 17.4664 15.0477C16.9394 15.0477 16.5002 15.2234 16.1488 15.575L14.4887 17.2624C13.1535 16.6296 11.994 15.8474 11.0102 14.9158C10.0264 13.9667 9.24461 12.8154 8.66487 11.462L10.3514 9.7746C10.7203 9.3879 10.9048 8.9309 10.9048 8.4036C10.9048 7.85871 10.694 7.41929 10.2723 7.08533L10.3514 7.16443L6.82023 3.55237C6.46887 3.25357 6.05603 3.10416 5.58169 3.10416ZM14.3042 3.94785V5.63524C15.3758 5.63524 16.3596 5.89889 17.2556 6.4262C18.1691 6.9535 18.8894 7.67416 19.4165 8.58816C19.9435 9.48458 20.207 10.4689 20.207 11.5411H21.8936C21.8936 10.1701 21.551 8.89575 20.8658 7.7181C20.1807 6.5756 19.2671 5.6616 18.1252 4.9761C16.9482 4.2906 15.6745 3.94785 14.3042 3.94785ZM5.58169 4.79155C5.63439 4.79155 5.69588 4.81791 5.76615 4.87064L9.21826 8.4036C9.23583 8.47391 9.21826 8.53542 9.16556 8.58816L6.66212 11.0665L6.84658 11.5938L7.18916 12.332C7.47025 12.9296 7.79525 13.5097 8.16418 14.0721C8.67365 14.8631 9.23583 15.5398 9.85071 16.1023C10.6764 16.9108 11.669 17.649 12.8285 18.317C13.4082 18.6509 13.9001 18.897 14.3042 19.0552L14.8312 19.2925L17.3874 16.735C17.4225 16.6999 17.4489 16.6823 17.4664 16.6823C17.484 16.6823 17.5103 16.6999 17.5455 16.735L21.103 20.2944C21.1381 20.3295 21.1557 20.3559 21.1557 20.3735C21.1557 20.3735 21.1381 20.391 21.103 20.4262L18.4678 23.0364C18.0813 23.3703 17.6597 23.4582 17.2029 23.3C13.619 21.9114 10.6325 20.0131 8.24324 17.6051C6.76753 16.1286 5.47628 14.4501 4.3695 12.5693C3.57894 11.2159 2.96406 9.90642 2.52486 8.64089V8.61452C2.45459 8.45633 2.44581 8.27177 2.49851 8.06085C2.55121 7.83235 2.64784 7.65658 2.78838 7.53354L5.39723 4.87064C5.44993 4.81791 5.51142 4.79155 5.58169 4.79155ZM14.3042 7.32262V9.01C15.0069 9.01 15.6042 9.25608 16.0961 9.74823C16.588 10.2404 16.834 10.838 16.834 11.5411H18.5205C18.5205 10.7853 18.3273 10.0822 17.9408 9.43185C17.5718 8.7815 17.0624 8.27177 16.4123 7.90266C15.7623 7.51596 15.0596 7.32262 14.3042 7.32262Z" fill="black"/>
+							</svg>
+							<span class="contacts--wrapper">
+								<b>Номер</b>
+								<p>+7 (351) 247-97-62</p>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:fox_74@list.ru" target="_blank">
+							<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.33523 0.498688V2.22352L0.90625 5.75801V20.4049H22.6222V5.75801L17.1932 2.22352V0.498688H6.33523ZM8.14489 2.30835H15.3835V9.26422L11.7642 11.6111L8.14489 9.26422V2.30835ZM9.04972 4.11801V5.92766H14.4787V4.11801H9.04972ZM6.33523 4.37249V8.07663L3.47936 6.2387L6.33523 4.37249ZM17.1932 4.37249L20.0491 6.2387L17.1932 8.07663V4.37249ZM9.04972 6.83249V8.64215H14.4787V6.83249H9.04972ZM2.71591 7.90698L11.7642 13.7601L20.8125 7.90698V18.5953H2.71591V7.90698Z" fill="black"/>
+							</svg>
+							<span class="contacts--wrapper">
+								<b>Почта</b>
+								<p>fox_74@list.ru</p>
+							</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="social">
+					<li>
+						<a href="https://vk.com/reklamafox74" target="_blank"><img src="img/vk.png" alt="#"></a>
+					</li>
+				</ul>
+				<button class="button button--menu" title="Открыть меню">меню</button>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="main--header section" style="background-image: url(img/main.png);">
+				<div class="container">
+					<div class="row">
+						<div class="main--header__wrapper">
+							<h1 class="h1">Печать на текстиле</h1>
+							<span>lorem ipsum doller amet</span>
+							<button class="button open--calculate">Рассчитать стоимость</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--advantages section" id="advantages">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Наши преимущества</h2>
+						<p class="subtitle">
+							Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed. Suspendisse lobortis vitae quis vehicula
+							pellentesque sit id. Urna posuere consequat velit vulputate faucibus pretium arcu accumsan sit. Vel venenatis sapien.
+						</p>
+						<div class="main--advantages__wrapper">
+							<div class="main--advantages__left">
+								<img src="img/advantages/1.png" alt="#">
+								<img src="img/advantages/2.png" alt="#">
+								<img src="img/advantages/3.png" alt="#">
+							</div>
+							<div class="main--advantages__right">
+								<ul>
+									<li>
+										<p>Работаем <span class="color-accent">с 2009 года</span>, специализируемся на трафаретной печати</p>
+									</li>
+									<li>
+										<p>
+											100% <span class="color-accent">гарантия качества</span>, проверенная временем
+										</p>
+									</li>
+									<li>
+										<p>
+											<span class="color-accent">Доступные цены</span>, в соотношении цена-качество
+										</p>
+									</li>
+									<li>
+										<p>
+											Предоставляем <span class="color-accent">быстрые сроки производства</span>
+										</p>
+									</li>
+								</ul>
+								<button class="button open--general">Связаться с нами</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--services section" id="services">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Каталог услуг</h2>
+						<div class="main--services__wrapper">
+							<div class="main--services__item">
+								<div class="image">
+									<img src="img/services/1.png" alt="#">
+								</div>
+								<div class="texts">
+									<h3 class="h3">Футболки</h3>
+									<p class="subtitle">Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit amet consectetur.</p>
+									<button class="button open--calculate">Рассчитать стоимость</button>
+								</div>
+							</div>
+							<div class="main--services__item">
+								<div class="image">
+									<img src="img/services/2.png" alt="#">
+								</div>
+								<div class="texts">
+									<h3 class="h3">Кепки</h3>
+									<p class="subtitle">Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit amet consectetur.</p>
+									<button class="button open--calculate">Рассчитать стоимость</button>
+								</div>
+							</div>
+							<div class="main--services__item">
+								<div class="image">
+									<img src="img/services/3.png" alt="#">
+								</div>
+								<div class="texts">
+									<h3 class="h3">Поло</h3>
+									<p class="subtitle">Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit amet consectetur.</p>
+									<button class="button open--calculate">Рассчитать стоимость</button>
+								</div>
+							</div>
+							<div class="main--services__item">
+								<div class="image">
+									<img src="img/services/1.png" alt="#">
+								</div>
+								<div class="texts">
+									<h3 class="h3">Худи и толстовки</h3>
+									<p class="subtitle">Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit amet consectetur.</p>
+									<button class="button open--calculate">Рассчитать стоимость</button>
+								</div>
+							</div>
+							<div class="main--services__item">
+								<div class="image">
+									<img src="img/services/2.png" alt="#">
+								</div>
+								<div class="texts">
+									<h3 class="h3">Свитшоты и лонгсливы</h3>
+									<p class="subtitle">Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit amet consectetur.</p>
+									<button class="button open--calculate">Рассчитать стоимость</button>
+								</div>
+							</div>
+							<div class="main--services__item">
+								<div class="image">
+									<img src="img/services/3.png" alt="#">
+								</div>
+								<div class="texts">
+									<h3 class="h3">Спец. одежда</h3>
+									<p class="subtitle">Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit amet consectetur.</p>
+									<button class="button open--calculate">Рассчитать стоимость</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--about section" id="about">
+				<div class="container">
+					<div class="row">
+						<div class="main--about__wrapper">
+							<div class="main--about__left">
+								<video id="videoElement" playsinline controls poster="img/about/bg-video.png">
+									<source src="https://quarz-prom.ru/wp-content/uploads/2025/01/4751133_glassware_laboratory_1920x1080.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="main--about__right">
+								<h2 class="h2">О компании</h2>
+								<p>
+									Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed. Suspendisse lobortis vitae quis vehicula
+									pellentesque sit id. Urna posuere consequat velit vulputate faucibus pretium arcu accumsan sit. Vel venenatis sapien.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--works section" id="works-section">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Портфолио работ</h2>
+						<p class="subtitle">Ознакомьтесь с нашими последними работами</p>
+					</div>
+				</div>
+				<div class="main--works__wrapper swiper">
+					<div class="swiper-wrapper">
+						<div class="main--works__item swiper-slide">
+							<a href="img/works/1.png" data-fancybox="works">
+								<img src="img/works/1-mini.png" alt="#">
+							</a>
+						</div>
+						<div class="main--works__item swiper-slide">
+							<a href="img/works/2.png" data-fancybox="works">
+								<img src="img/works/2-mini.png" alt="#">
+							</a>
+						</div>
+						<div class="main--works__item swiper-slide">
+							<a href="img/works/3.png" data-fancybox="works">
+								<img src="img/works/3-mini.png" alt="#">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="banner section">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Сделали счастливее <span class="color-accent">100+</span> клиентов</h2>
+						<p class="subtitle">
+							А мерч надолго остался в душе и на теле сотрудников,
+							партнеров и покупателей
+						</p>
+						<div class="banner--wrapper">
+							<div class="h2">Расскажем, как лучше <span class="color-accent">реализовать</span> вашу<br> идею в мерче</div>
+							<p class="subtitle">Заполните форму, мы свяжемся для консультации</p>
+							<form action="#" method="post" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">
+								<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Имя" value="" type="text" name="fio"></span>
+								<span class="wpcf7-form-control-wrap" data-name="tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+7 (999) 999-99-99" value="" type="tel" name="tel"></span>
+								<button class="button wpcf7-form-control wpcf7-submit" type="submit">
+									<span>Проконсультироваться</span>
+								</button>
+								<span class="accept">Отправляя форму, вы соглашаетесь на обработку персональных данных</span>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="main--methods section" id="methods">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Методы нанесения</h2>
+						<p class="subtitle">Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.</p>
+						<div class="main--methods__wrapper">
+							<div class="main--methods__item">
+								<div class="main--methods__left">
+									<h3 class="h3">Метод нанесения</h3>
+									<p class="subtitle">Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.</p>
+								</div>
+								<div class="main--methods__right">
+									<img src="img/methods/1.png" alt="#">
+								</div>
+							</div>
+							<div class="main--methods__item">
+								<div class="main--methods__left">
+									<h3 class="h3">Метод нанесения</h3>
+									<p class="subtitle">Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.</p>
+								</div>
+								<div class="main--methods__right">
+									<img src="img/methods/2.png" alt="#">
+								</div>
+							</div>
+							<div class="main--methods__item">
+								<div class="main--methods__left">
+									<h3 class="h3">Метод нанесения</h3>
+									<p class="subtitle">Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.</p>
+								</div>
+								<div class="main--methods__right">
+									<img src="img/methods/3.png" alt="#">
+								</div>
+							</div>
+							<div class="main--methods__item">
+								<div class="main--methods__left">
+									<h3 class="h3">Метод нанесения</h3>
+									<p class="subtitle">Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.</p>
+								</div>
+								<div class="main--methods__right">
+									<img src="img/methods/4.png" alt="#">
+								</div>
+							</div>
+							<div class="main--methods__item">
+								<div class="main--methods__left">
+									<h3 class="h3">Метод нанесения</h3>
+									<p class="subtitle">Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.</p>
+								</div>
+								<div class="main--methods__right">
+									<img src="img/methods/5.png" alt="#">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--scheme section" id="scheme">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Схема процесса заказа</h2>
+						<p class="subtitle">lorem ipsum doller amet  lorem ipsum doller amet  lorem ipsum doller amet </p>
+						<div class="main--scheme__wrapper">
+							<div class="main--scheme__item">
+								<div class="icon">
+									<img src="img/scheme/1.svg" alt="#">
+								</div>
+								<h3 class="h3">Запрос<br> заявки</h3>
+								<p>Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed. </p>
+							</div>
+							<div class="main--scheme__item">
+								<div class="icon">
+									<img src="img/scheme/2.svg" alt="#">
+								</div>
+								<h3 class="h3">Обсуждение<br> условий</h3>
+								<p>Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed. </p>
+							</div>
+							<div class="main--scheme__item">
+								<div class="icon">
+									<img src="img/scheme/3.svg" alt="#">
+								</div>
+								<h3 class="h3">Производство и доставка</h3>
+								<p>Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed. </p>
+							</div>
+							<div class="main--scheme__item">
+								<div class="icon">
+									<img src="img/scheme/4.svg" alt="#">
+								</div>
+								<h3 class="h3">Обратная связь о проделанной работе</h3>
+								<p>Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--clients section" id="clients">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Наши клиенты</h2>
+						<div class="main--clients__wrapper swiper">
+							<div class="swiper-wrapper">
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/-7RB8wrAmAE.jpg" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/Grundig_Intermedia_logo.svg.png" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/Haier_logo.svg.png" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/kari.png" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/logotipy_3_i_-1_etazh_todes.jpg" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/Magnit_logo.svg.png" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/rbt.png" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/trakt.png" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/автокаста.jpg" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/атрибутика клаб.jpg" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/детский мирэ.png" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/Логотип_Русская_медная_компания.svg.png" alt="#">
+								</div>
+								<div class="main--clients__item swiper-slide">
+									<img src="img/clients/Монетка_лого.png" alt="#">
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--faq section" id="faq">
+				<div class="container">
+					<div class="row">
+						<h2 class="h2">Ответы на вопросы</h2>
+						<div class="main--faq__wrapper">
+							<div class="main--faq__item">
+								<div class="main--faq__item--button">
+									<span>Lorem ipsum dolar sit amet consectetur</span>
+									<div class="main--faq__item--icon">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="main--faq__item--answer">
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum. Gravida arcu aliquet rutrum erat
+										varius. Tellus felis sed pretium in egestas.
+									</p>
+								</div>
+							</div>
+							<div class="main--faq__item">
+								<div class="main--faq__item--button">
+									<span>Lorem ipsum dolar sit amet consectetur</span>
+									<div class="main--faq__item--icon">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="main--faq__item--answer">
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum. Gravida arcu aliquet rutrum erat
+										varius. Tellus felis sed pretium in egestas.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main--contacts section" id="contacts">
+				<div class="container">
+					<div class="row">
+						<div class="main--contacts__wrapper">
+							<div class="main--contacts__left">
+								<h2 class="h2">Свяжитесь с нами</h2>
+								<p class="subtitle">
+									Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum. Gravida arcu aliquet rutrum
+									erat varius. Tellus felis sed pretium in egestas.
+								</p>
+								<form action="#" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">
+									<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="ФИО" value="" type="text" name="fio"></span>
+									<span class="wpcf7-form-control-wrap" data-name="tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+7 (999) 999-99-99" value="" type="tel" name="tel"></span>
+									<span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" value="" type="mail" name="email"></span>
+									<span class="accept">Отправляя форму, вы соглашаетесь на обработку персональных данных</span>
+									<button class="button wpcf7-form-control wpcf7-submit" type="submit">
+										<span>Отправить</span>
+									</button>
+								</form>
+								<ul class="contacts">
+									<li>
+										<a href="tel:+73512479762" target="_blank">
+											<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.3042 0.57309V2.26047C15.9731 2.26047 17.5367 2.68232 18.9948 3.52601C20.3827 4.35212 21.4895 5.45947 22.3152 6.84804C23.1584 8.30692 23.5801 9.87127 23.5801 11.5411H25.2666C25.2666 9.55488 24.7659 7.70931 23.7645 6.00435C22.7983 4.35212 21.4895 3.04264 19.8381 2.07591C18.134 1.07403 16.2894 0.57309 14.3042 0.57309ZM5.58169 3.10416C5.10735 3.10416 4.69451 3.25357 4.34315 3.55237L1.6289 6.32074L1.70795 6.268C1.26875 6.63712 0.978881 7.09412 0.838337 7.639C0.715362 8.18389 0.750498 8.71119 0.943745 9.22092C1.43565 10.5919 2.09445 11.9981 2.92014 13.4394C4.07963 15.4256 5.45871 17.2096 7.0574 18.7915C9.62232 21.3753 12.8109 23.4143 16.6232 24.9083H16.6495C17.159 25.0841 17.6685 25.1192 18.1779 25.0138C18.705 24.9083 19.1705 24.6798 19.5746 24.3283L22.2361 21.6654C22.5875 21.3138 22.7632 20.8832 22.7632 20.3735C22.7632 19.8462 22.5875 19.4067 22.2361 19.0552L18.784 15.575C18.4327 15.2234 17.9935 15.0477 17.4664 15.0477C16.9394 15.0477 16.5002 15.2234 16.1488 15.575L14.4887 17.2624C13.1535 16.6296 11.994 15.8474 11.0102 14.9158C10.0264 13.9667 9.24461 12.8154 8.66487 11.462L10.3514 9.7746C10.7203 9.3879 10.9048 8.9309 10.9048 8.4036C10.9048 7.85871 10.694 7.41929 10.2723 7.08533L10.3514 7.16443L6.82023 3.55237C6.46887 3.25357 6.05603 3.10416 5.58169 3.10416ZM14.3042 3.94785V5.63524C15.3758 5.63524 16.3596 5.89889 17.2556 6.4262C18.1691 6.9535 18.8894 7.67416 19.4165 8.58816C19.9435 9.48458 20.207 10.4689 20.207 11.5411H21.8936C21.8936 10.1701 21.551 8.89575 20.8658 7.7181C20.1807 6.5756 19.2671 5.6616 18.1252 4.9761C16.9482 4.2906 15.6745 3.94785 14.3042 3.94785ZM5.58169 4.79155C5.63439 4.79155 5.69588 4.81791 5.76615 4.87064L9.21826 8.4036C9.23583 8.47391 9.21826 8.53542 9.16556 8.58816L6.66212 11.0665L6.84658 11.5938L7.18916 12.332C7.47025 12.9296 7.79525 13.5097 8.16418 14.0721C8.67365 14.8631 9.23583 15.5398 9.85071 16.1023C10.6764 16.9108 11.669 17.649 12.8285 18.317C13.4082 18.6509 13.9001 18.897 14.3042 19.0552L14.8312 19.2925L17.3874 16.735C17.4225 16.6999 17.4489 16.6823 17.4664 16.6823C17.484 16.6823 17.5103 16.6999 17.5455 16.735L21.103 20.2944C21.1381 20.3295 21.1557 20.3559 21.1557 20.3735C21.1557 20.3735 21.1381 20.391 21.103 20.4262L18.4678 23.0364C18.0813 23.3703 17.6597 23.4582 17.2029 23.3C13.619 21.9114 10.6325 20.0131 8.24324 17.6051C6.76753 16.1286 5.47628 14.4501 4.3695 12.5693C3.57894 11.2159 2.96406 9.90642 2.52486 8.64089V8.61452C2.45459 8.45633 2.44581 8.27177 2.49851 8.06085C2.55121 7.83235 2.64784 7.65658 2.78838 7.53354L5.39723 4.87064C5.44993 4.81791 5.51142 4.79155 5.58169 4.79155ZM14.3042 7.32262V9.01C15.0069 9.01 15.6042 9.25608 16.0961 9.74823C16.588 10.2404 16.834 10.838 16.834 11.5411H18.5205C18.5205 10.7853 18.3273 10.0822 17.9408 9.43185C17.5718 8.7815 17.0624 8.27177 16.4123 7.90266C15.7623 7.51596 15.0596 7.32262 14.3042 7.32262Z" fill="black"></path>
+											</svg>
+											<span class="contacts--wrapper">
+												<b>Номер</b>
+												<p>+7 (351) 247-97-62</p>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="mailto:fox_74@list.ru" target="_blank">
+											<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6.33523 0.498688V2.22352L0.90625 5.75801V20.4049H22.6222V5.75801L17.1932 2.22352V0.498688H6.33523ZM8.14489 2.30835H15.3835V9.26422L11.7642 11.6111L8.14489 9.26422V2.30835ZM9.04972 4.11801V5.92766H14.4787V4.11801H9.04972ZM6.33523 4.37249V8.07663L3.47936 6.2387L6.33523 4.37249ZM17.1932 4.37249L20.0491 6.2387L17.1932 8.07663V4.37249ZM9.04972 6.83249V8.64215H14.4787V6.83249H9.04972ZM2.71591 7.90698L11.7642 13.7601L20.8125 7.90698V18.5953H2.71591V7.90698Z" fill="black"></path>
+											</svg>
+											<span class="contacts--wrapper">
+												<b>Почта</b>
+												<p>fox_74@list.ru</p>
+											</span>
+										</a>
+									</li>
+									<li>
+										<div>
+											<span class="contacts--wrapper">
+												<b>Адрес</b>
+												<p>г. Челябинск, ул. Цинковая, 2а, к.2</p>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="main--contacts__right">
+								<div class="map-overlay">Нажмите, чтобы активировать карту</div>
+								<div id="map" data-tooltip="нажмите на карту, чтобы активировать"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer--top">
+						<div class="footer--info">
+							<div class="logo"><img src="img/logo.png" alt="#"></div>
+							<span>Работаем<br> с 2019 года</span>
+						</div>
+						<div class="footer--nav">
+							<span class="h3">Услуги</span>
+							<ul>
+								<li><button class="button open--calculate">Футболки</button></li>
+								<li><button class="button open--calculate">Кепки</button></li>
+								<li><button class="button open--calculate">Поло</button></li>
+								<li><button class="button open--calculate">Худи и толстовки</button></li>
+								<li><button class="button open--calculate">Свитшоты и лонгсливы</button></li>
+								<li><button class="button open--calculate">Спец. одежда</button></li>
+							</ul>
+						</div>
+						<div class="footer--social">
+							<span class="h3">Свяжитесь с нами</span>
+							<ul class="social">
+								<li>
+									<a href="https://vk.com/reklamafox74" target="_blank"><img src="img/vk.png" alt="#"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer--bottom">
+						<div class="block">
+							<span class="copyright">2025 © Все права защищены</span>
+						</div>
+						<div class="block">
+							<a href="#">Политика конфиденциальности</a>
+							<div>Сайт разработан <a href="#" target="_blank">Limitless Creators</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div class="menu--nav">
+		<div class="menu--nav__wrapper">
+			<div class="menu--nav__close" title="Закрыть меню">
+				<span></span><span></span>
+			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#about">О компании</a></li>
+					<li><a href="#works-section">Портфолио</a></li>
+					<li><a href="#methods">Методы нанесения</a></li>
+					<li><a href="#scheme">Схема процесса заказа</a></li>
+					<li><a href="#clients">Наши клиенты</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="menu--nav__footer">
+				<ul class="social">
+					<li>
+						<a href="https://vk.com/reklamafox74" target="_blank"><img src="img/vk.png" alt="#"></a>
+					</li>
+				</ul>
+				<ul class="contacts">
+					<li>
+						<a href="tel:+73512479762" target="_blank">
+							<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.3042 0.57309V2.26047C15.9731 2.26047 17.5367 2.68232 18.9948 3.52601C20.3827 4.35212 21.4895 5.45947 22.3152 6.84804C23.1584 8.30692 23.5801 9.87127 23.5801 11.5411H25.2666C25.2666 9.55488 24.7659 7.70931 23.7645 6.00435C22.7983 4.35212 21.4895 3.04264 19.8381 2.07591C18.134 1.07403 16.2894 0.57309 14.3042 0.57309ZM5.58169 3.10416C5.10735 3.10416 4.69451 3.25357 4.34315 3.55237L1.6289 6.32074L1.70795 6.268C1.26875 6.63712 0.978881 7.09412 0.838337 7.639C0.715362 8.18389 0.750498 8.71119 0.943745 9.22092C1.43565 10.5919 2.09445 11.9981 2.92014 13.4394C4.07963 15.4256 5.45871 17.2096 7.0574 18.7915C9.62232 21.3753 12.8109 23.4143 16.6232 24.9083H16.6495C17.159 25.0841 17.6685 25.1192 18.1779 25.0138C18.705 24.9083 19.1705 24.6798 19.5746 24.3283L22.2361 21.6654C22.5875 21.3138 22.7632 20.8832 22.7632 20.3735C22.7632 19.8462 22.5875 19.4067 22.2361 19.0552L18.784 15.575C18.4327 15.2234 17.9935 15.0477 17.4664 15.0477C16.9394 15.0477 16.5002 15.2234 16.1488 15.575L14.4887 17.2624C13.1535 16.6296 11.994 15.8474 11.0102 14.9158C10.0264 13.9667 9.24461 12.8154 8.66487 11.462L10.3514 9.7746C10.7203 9.3879 10.9048 8.9309 10.9048 8.4036C10.9048 7.85871 10.694 7.41929 10.2723 7.08533L10.3514 7.16443L6.82023 3.55237C6.46887 3.25357 6.05603 3.10416 5.58169 3.10416ZM14.3042 3.94785V5.63524C15.3758 5.63524 16.3596 5.89889 17.2556 6.4262C18.1691 6.9535 18.8894 7.67416 19.4165 8.58816C19.9435 9.48458 20.207 10.4689 20.207 11.5411H21.8936C21.8936 10.1701 21.551 8.89575 20.8658 7.7181C20.1807 6.5756 19.2671 5.6616 18.1252 4.9761C16.9482 4.2906 15.6745 3.94785 14.3042 3.94785ZM5.58169 4.79155C5.63439 4.79155 5.69588 4.81791 5.76615 4.87064L9.21826 8.4036C9.23583 8.47391 9.21826 8.53542 9.16556 8.58816L6.66212 11.0665L6.84658 11.5938L7.18916 12.332C7.47025 12.9296 7.79525 13.5097 8.16418 14.0721C8.67365 14.8631 9.23583 15.5398 9.85071 16.1023C10.6764 16.9108 11.669 17.649 12.8285 18.317C13.4082 18.6509 13.9001 18.897 14.3042 19.0552L14.8312 19.2925L17.3874 16.735C17.4225 16.6999 17.4489 16.6823 17.4664 16.6823C17.484 16.6823 17.5103 16.6999 17.5455 16.735L21.103 20.2944C21.1381 20.3295 21.1557 20.3559 21.1557 20.3735C21.1557 20.3735 21.1381 20.391 21.103 20.4262L18.4678 23.0364C18.0813 23.3703 17.6597 23.4582 17.2029 23.3C13.619 21.9114 10.6325 20.0131 8.24324 17.6051C6.76753 16.1286 5.47628 14.4501 4.3695 12.5693C3.57894 11.2159 2.96406 9.90642 2.52486 8.64089V8.61452C2.45459 8.45633 2.44581 8.27177 2.49851 8.06085C2.55121 7.83235 2.64784 7.65658 2.78838 7.53354L5.39723 4.87064C5.44993 4.81791 5.51142 4.79155 5.58169 4.79155ZM14.3042 7.32262V9.01C15.0069 9.01 15.6042 9.25608 16.0961 9.74823C16.588 10.2404 16.834 10.838 16.834 11.5411H18.5205C18.5205 10.7853 18.3273 10.0822 17.9408 9.43185C17.5718 8.7815 17.0624 8.27177 16.4123 7.90266C15.7623 7.51596 15.0596 7.32262 14.3042 7.32262Z" fill="black"/>
+							</svg>
+							<span class="contacts--wrapper">
+								<b>Номер</b>
+								<p>+7 (351) 247-97-62</p>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:fox_74@list.ru" target="_blank">
+							<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.33523 0.498688V2.22352L0.90625 5.75801V20.4049H22.6222V5.75801L17.1932 2.22352V0.498688H6.33523ZM8.14489 2.30835H15.3835V9.26422L11.7642 11.6111L8.14489 9.26422V2.30835ZM9.04972 4.11801V5.92766H14.4787V4.11801H9.04972ZM6.33523 4.37249V8.07663L3.47936 6.2387L6.33523 4.37249ZM17.1932 4.37249L20.0491 6.2387L17.1932 8.07663V4.37249ZM9.04972 6.83249V8.64215H14.4787V6.83249H9.04972ZM2.71591 7.90698L11.7642 13.7601L20.8125 7.90698V18.5953H2.71591V7.90698Z" fill="black"/>
+							</svg>
+							<span class="contacts--wrapper">
+								<b>Почта</b>
+								<p>fox_74@list.ru</p>
+							</span>
+						</a>
+					</li>
+					<li>
+						<div>
+							<span class="contacts--wrapper">
+								<b>Адрес</b>
+								<p>г. Челябинск, ул. Цинковая, 2а, к.2</p>
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--general">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="h2">Оставить заявку</div>
+			<form action="#" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">
+				<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="ФИО" value="" type="text" name="fio"></span>
+				<span class="wpcf7-form-control-wrap" data-name="tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+7 (999) 999-99-99" value="" type="tel" name="tel"></span>
+				<span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" value="" type="mail" name="email"></span>
+				<span class="accept">Отправляя форму, вы соглашаетесь на обработку персональных данных</span>
+				<button class="button wpcf7-form-control wpcf7-submit" type="submit">
+					<span>Отправить</span>
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal modal--calculate">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="main--form__right">
+				<div class="h3">Получите расчет стоимости мерча</div>
+				<form action="#" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">
+					<input type="hidden" name="service" value="">
+					<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="ФИО" value="" type="text" name="fio"></span>
+					<span class="wpcf7-form-control-wrap" data-name="tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+7 (999) 999-99-99" value="" type="tel" name="tel"></span>
+					<span class="wpcf7-form-control-wrap" data-name="izdeliya"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Укажите изделия" value="" type="text" name="izdeliya"></span>
+					<span class="wpcf7-form-control-wrap" data-name="tiraj"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Укажите тираж от" value="" type="text" name="tiraj"></span>
+					<span class="accept">Отправляя форму, вы соглашаетесь на обработку персональных данных</span>
+					<button class="button wpcf7-form-control wpcf7-submit" type="submit">
+						<span>Отправить</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--send">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#0F67FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="modal--send__message h1">Ваш запрос отправлен, мы свяжемся с вами!</div>
+		</div>
+	</div>
+
+	<div class="modal modal--error">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#FE0F0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="modal--error__message h1">Ошибка отправки!</div>
+			<div class="h3">Пожалуйста, попробуйте позже или свяжитесь с нами другим способом:</div>
+			<ul class="contacts">
+				<li>
+					<a href="tel:+73512479762" target="_blank">
+						<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.3042 0.57309V2.26047C15.9731 2.26047 17.5367 2.68232 18.9948 3.52601C20.3827 4.35212 21.4895 5.45947 22.3152 6.84804C23.1584 8.30692 23.5801 9.87127 23.5801 11.5411H25.2666C25.2666 9.55488 24.7659 7.70931 23.7645 6.00435C22.7983 4.35212 21.4895 3.04264 19.8381 2.07591C18.134 1.07403 16.2894 0.57309 14.3042 0.57309ZM5.58169 3.10416C5.10735 3.10416 4.69451 3.25357 4.34315 3.55237L1.6289 6.32074L1.70795 6.268C1.26875 6.63712 0.978881 7.09412 0.838337 7.639C0.715362 8.18389 0.750498 8.71119 0.943745 9.22092C1.43565 10.5919 2.09445 11.9981 2.92014 13.4394C4.07963 15.4256 5.45871 17.2096 7.0574 18.7915C9.62232 21.3753 12.8109 23.4143 16.6232 24.9083H16.6495C17.159 25.0841 17.6685 25.1192 18.1779 25.0138C18.705 24.9083 19.1705 24.6798 19.5746 24.3283L22.2361 21.6654C22.5875 21.3138 22.7632 20.8832 22.7632 20.3735C22.7632 19.8462 22.5875 19.4067 22.2361 19.0552L18.784 15.575C18.4327 15.2234 17.9935 15.0477 17.4664 15.0477C16.9394 15.0477 16.5002 15.2234 16.1488 15.575L14.4887 17.2624C13.1535 16.6296 11.994 15.8474 11.0102 14.9158C10.0264 13.9667 9.24461 12.8154 8.66487 11.462L10.3514 9.7746C10.7203 9.3879 10.9048 8.9309 10.9048 8.4036C10.9048 7.85871 10.694 7.41929 10.2723 7.08533L10.3514 7.16443L6.82023 3.55237C6.46887 3.25357 6.05603 3.10416 5.58169 3.10416ZM14.3042 3.94785V5.63524C15.3758 5.63524 16.3596 5.89889 17.2556 6.4262C18.1691 6.9535 18.8894 7.67416 19.4165 8.58816C19.9435 9.48458 20.207 10.4689 20.207 11.5411H21.8936C21.8936 10.1701 21.551 8.89575 20.8658 7.7181C20.1807 6.5756 19.2671 5.6616 18.1252 4.9761C16.9482 4.2906 15.6745 3.94785 14.3042 3.94785ZM5.58169 4.79155C5.63439 4.79155 5.69588 4.81791 5.76615 4.87064L9.21826 8.4036C9.23583 8.47391 9.21826 8.53542 9.16556 8.58816L6.66212 11.0665L6.84658 11.5938L7.18916 12.332C7.47025 12.9296 7.79525 13.5097 8.16418 14.0721C8.67365 14.8631 9.23583 15.5398 9.85071 16.1023C10.6764 16.9108 11.669 17.649 12.8285 18.317C13.4082 18.6509 13.9001 18.897 14.3042 19.0552L14.8312 19.2925L17.3874 16.735C17.4225 16.6999 17.4489 16.6823 17.4664 16.6823C17.484 16.6823 17.5103 16.6999 17.5455 16.735L21.103 20.2944C21.1381 20.3295 21.1557 20.3559 21.1557 20.3735C21.1557 20.3735 21.1381 20.391 21.103 20.4262L18.4678 23.0364C18.0813 23.3703 17.6597 23.4582 17.2029 23.3C13.619 21.9114 10.6325 20.0131 8.24324 17.6051C6.76753 16.1286 5.47628 14.4501 4.3695 12.5693C3.57894 11.2159 2.96406 9.90642 2.52486 8.64089V8.61452C2.45459 8.45633 2.44581 8.27177 2.49851 8.06085C2.55121 7.83235 2.64784 7.65658 2.78838 7.53354L5.39723 4.87064C5.44993 4.81791 5.51142 4.79155 5.58169 4.79155ZM14.3042 7.32262V9.01C15.0069 9.01 15.6042 9.25608 16.0961 9.74823C16.588 10.2404 16.834 10.838 16.834 11.5411H18.5205C18.5205 10.7853 18.3273 10.0822 17.9408 9.43185C17.5718 8.7815 17.0624 8.27177 16.4123 7.90266C15.7623 7.51596 15.0596 7.32262 14.3042 7.32262Z" fill="black"/>
+						</svg>
+						<span class="contacts--wrapper">
+							<b>Номер</b>
+							<p>+7 (351) 247-97-62</p>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:fox_74@list.ru" target="_blank">
+						<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.33523 0.498688V2.22352L0.90625 5.75801V20.4049H22.6222V5.75801L17.1932 2.22352V0.498688H6.33523ZM8.14489 2.30835H15.3835V9.26422L11.7642 11.6111L8.14489 9.26422V2.30835ZM9.04972 4.11801V5.92766H14.4787V4.11801H9.04972ZM6.33523 4.37249V8.07663L3.47936 6.2387L6.33523 4.37249ZM17.1932 4.37249L20.0491 6.2387L17.1932 8.07663V4.37249ZM9.04972 6.83249V8.64215H14.4787V6.83249H9.04972ZM2.71591 7.90698L11.7642 13.7601L20.8125 7.90698V18.5953H2.71591V7.90698Z" fill="black"/>
+						</svg>
+						<span class="contacts--wrapper">
+							<b>Почта</b>
+							<p>fox_74@list.ru</p>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
